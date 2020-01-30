@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.maincontainer {
+  display: flex;
+  direction: row;
+  flex-wrap: wrap;
+  height: auto;
+  width: 100%;
+  .div1 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    bottom: 0;
+    width: 25%;
+    background-color: rgb(226, 220, 220);
+    border-right: black solid 2px;
+  }
+  .div2 {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    left: 25%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(167, 167, 170);
+    bottom: 0;
+    width: 75%;
+  }
+}
+.side-bar {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  .listUserButton {
+    text-align: left !important;
+    margin: 3px;
+    color: black !important;
+  }
+  button :hover {
+    text-decoration: none !important;
+  }
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 300px;
+  border: solid 2px black;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  img {
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+ 
+}
+
+
+.listUsers{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 7px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-bottom: solid 1px black;
+}
+.listUserButtons{
+  color: white !important;
+  text-align: center;
+  border-radius: 0px !important;
+}
+.icon:hover{
+   opacity: 0.5;
+}
